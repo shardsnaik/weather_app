@@ -39,10 +39,7 @@ link {
     outline: none;
 }
 
-/* @media (min-width: 500px) {
-    .
-    
-} */
+
 /* for weather page css */
 
 .temp-form
@@ -50,19 +47,18 @@ link {
     height: 7vh;
     width: 53vw;
     background-color:black;
-    border-radius: 2.5rem;
+    border-radius:1vh;
     color: white;
-    /* position: absolute;
-right: 193px;
-bottom: 145px; */
 font-size: medium;
+padding: 2vh;
 }
 
 
 #searchbtn {
     height: 6vh;
     width: 5vw;
-    border-radius: 2.5rem;
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh;
     background-color: #1aa0d6;
     color: white;
     /* position: absolute; */
@@ -81,7 +77,7 @@ font-size: medium;
     color: white;
 }
 .mainbox2 {
-    background-color: blue;
+    background-color: rgb(51, 255, 0);
     width: 33vw;
     height: 6vh;
     display: flex;
@@ -93,6 +89,7 @@ font-size: medium;
 .mainbox3 {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .main-container {
@@ -106,17 +103,13 @@ font-size: medium;
 .body {
     background-color: #2a2626;
 }
-.m3one{
-    height: 16vh;
-        width: 6vw;
-        /* background-color: black; */
-        font-size: 2rem;
+.m3one, .m3two{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2vh;
 }
 
-.m3two{
-    /* background-color: blanchedalmond; */
-    width: 5vw;
-  }
 /* icon css */
 .fa-solid.fa-cloud.fa-beat{
     color: #e6ebf5;
@@ -125,7 +118,9 @@ font-size: medium;
     letter-spacing: 0.215em;
     font-weight: 900;
   }
-
+#searchbtn{
+    margin-left: 1vh;
+}
 
 @media (min-width : 990px) {
 #searchbtn{
@@ -139,3 +134,33 @@ left: auto;
     display: flex;
 }
 }    
+@media (max-width: 768px) {
+
+    .temp-form #cityname {
+    width: 40vh;
+    }
+    #searchbtn{
+        width: 10vh;
+    }
+    .mainsbtn{
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 3vh;
+    }
+.mainbox{width: 65vw;
+    height: 35vh;}
+    .mainbox2{
+        display: flex
+        ;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: 5vh;
+            margin-top: 5vh;
+        
+    }
+
+
+
+}
